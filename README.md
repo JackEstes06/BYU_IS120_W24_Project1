@@ -37,7 +37,7 @@ Project1.pdf” and submitted to the appropriate Project 1 assignment on
 Learning Suite. Included in the submission comments should be a link to
 your GitHub repository for the project.
 
-# Required Tasks
+### Required Tasks
 - [5pts] Initialize a new Git repository for the project, and push it to your
    GitHub account. Make commits regularly to show your progress.
 - [10pts] Create the HTML framework for a landing page that includes a
@@ -50,7 +50,7 @@ page.
 - [10pts] Usage of a color scheme that is consistent, visually appealing, and
 applicable to the content of the website.
 
-# Optional Tasks
+### Optional Tasks
 - [15pts] Include an interactive feature on your website (i.e. a carousel, a
 modal, a dropdown, an animated SVG image, etc.). Max. 2 interactive
 features for up to 30 points total.
