@@ -80,7 +80,7 @@ Date: 02/08/2024
 Topic of Website (circle one): Personal Portfolio Product/Service
 
 ### Required Tasks, select all that were completed (up to 60 points):
-- [ ] 5 pts; Git-based repository
+- [x] 5 pts; Git-based repository
 - [ ] 10 pts; HTML framework includes a ```<header>```, ```<section>```, and ```<footer>```
 - [ ] 25pts; Effective use of CSS; fonts, colors, margins, padding, and borders
 - [ ] 10 pts; 3+ images, which are relevant to the content of the website
