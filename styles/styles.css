@@ -1,3 +1,19 @@
 /* Jack Estes */
 /* BYU IS120 W24 */
 /* 02/08/2024 */
+
+/* Add font-family to html content */
+body {
+    font-family: "Inter", "Arial", "Helvetica", sans-serif;
+}
+
+/* Overwrite bootstrap default background themes (need !important to work) */
+.bg-primary { background-color: #2e33ba !important; }
+.bg-secondary { background-color: #5d656c !important; }
+.bg-info { background-color: #ea5e16 !important; }
+.bg-light { background-color: #dce5f1 !important; }
+.bg-white { background-color: #ffffff !important; }
+.bg-dark { background-color: #070000 !important; }
+.bg-success { background-color: #0b9d5c !important; }
+.bg-warning { background-color: #dfca0b !important; }
+.bg-danger { background-color: #ed1f04 !important; }
