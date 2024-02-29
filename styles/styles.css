@@ -17,3 +17,27 @@ body {
 .bg-success { background-color: #0b9d5c !important; }
 .bg-warning { background-color: #dfca0b !important; }
 .bg-danger { background-color: #ed1f04 !important; }
+
+/*footer css*/
+footer {
+    background-color: lightgray;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content a, img {
+    margin: 5px;
+}
+.fa-brands {
+    color: white;
+    font-size: 2.5em;
+}
