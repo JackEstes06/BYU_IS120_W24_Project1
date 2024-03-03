@@ -5,9 +5,16 @@
 /* Add font-family to html content */
 body {
     font-family: "Inter", "Arial", "Helvetica", sans-serif;
+    /*margin: 10px;*/
+    /*padding: 10px;*/
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    border-radius: 5px;
 }
 
-/* Overwrite bootstrap default background themes (need !important to work) */
+/* Overwrite bootstrap default background themes (needs !important to overwrite) */
 .bg-primary { background-color: #2e33ba !important; }
 .bg-secondary { background-color: #5d656c !important; }
 .bg-info { background-color: #ea5e16 !important; }
@@ -18,6 +25,121 @@ body {
 .bg-warning { background-color: #dfca0b !important; }
 .bg-danger { background-color: #ed1f04 !important; }
 
+/*header css*/
+header {
+    margin-bottom: 10px;
+    height: 75px;
+}
+/* Style the button that is used to open and close the collapsible content */
+.header-collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-img {
+    margin: 1px;
+    padding-left: 5px;
+}
+/*Collapsible content should only show when the screen is small*/
+@media (min-width: 780px) {
+    .header-collapsible {display: none}
+    .header {
+        justify-content: flex-start;
+    }
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.header-collapsible:hover, .menu-item:hover {
+    background-color: #ccc;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+    background-color: #ccc;
+    border-radius: 10px 10px 0 0;
+}
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* Style individual collapsible content. Note: hidden by default */
+.menu-item {
+    padding: 5px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: black;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    /*margin-left: 10%;*/
+    /*margin-right: 10%;*/
+}
+.header-item-1 {
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.header-item-2 {
+    position: relative;
+}
+.header-item-1, .header-item-2 {
+    padding: 10px;
+}
+/*There should be a menu bar when the screen is large*/
+.menu-bar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-color: #212529;
+    /* This one was weird. On resizing, the menu bar and the hamburger menu bars were causing a shift when screen sizes changed from sm to lg. This padding keeps it from doing that. */
+    padding: 11px;
+    flex: 1;
+}
+@media (max-width: 779px){
+    .menu-bar {display: none;}
+}
+.menu-item-lg {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.titleToHome {
+    color: white;
+}
+.titleToHome:hover {
+    color: #212529;
+}
+
+/*main css*/
+main {
+    min-height: 65vh;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
 /*footer css*/
 footer {
     background-color: lightgray;
@@ -25,6 +147,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 0;
 }
 .footer-content {
     border-radius: 15px;
