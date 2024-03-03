@@ -42,8 +42,113 @@
         </div>
     </header>
     
-    <main>
-        
+    <main class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-12 col-xl-11">
+                <div id="pihole">
+                    <h1>Pi-Hole</h1>
+                    <h4>What is Pi-Hole?</h4>
+                    <p>This is too much for me to explain. Go to the <a title="Wikipedia page for PiHole" href="https://en.wikipedia.org/wiki/Pi-hole" target="_blank">Wiki page for PiHole</a> for more detailed info.</p>
+                    <p>TLDR - PiHole is an ad-blocker and allows for superior control over internet traffic and use in the home. It is open sourced and cool if you can figure it out.</p>
+                    <h4>How to do it?</h4>
+                    <p>Here are some YouTube videos and links explaining how to do it! You need a raspberry or some other computer that runs Linux. This computer will be running constantly so choose something that uses minimal power (i.e. raspberry pi).</p>
+                    <ul>
+                        <li>Here is the <a href="https://pi-hole.net/" title="Pi-Hole.com" target="_blank">Pi-Hole Website</a>.</li>
+                    </ul>
+                    <div class="youtube-embed">
+                        <iframe class="youtube-vid" src="https://www.youtube.com/embed/roYduABVjo8"></iframe>
+                    </div>
+                    <div class="youtube-embed">
+                        <iframe class="youtube-vid" src="https://www.youtube.com/embed/xtMFcVx3cHU"></iframe>
+                    </div>
+                    <div class="youtube-embed">
+                        <iframe class="youtube-vid" src="https://www.youtube.com/embed/cE21YjuaB6o"></iframe>
+                    </div>
+                    <p>Once you've fully set up the raspberry pi, Wi-Fi configuration settings, and pi-hole, you can start blocking what you want! Here are some links to blacklists for what I block and why; the rest you can google around for! These aren't all navigable links, so I'll put the in as text, and you can either add them to your ad-list (of things to blacklist) or go to them by copying and pasting.</p>
+                    <ul>
+                        <li>General - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</li>
+                        <li>Tracking - https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt</li>
+                        <li>Ads - https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt</li>
+                        <li>Adult Content - https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list</li>
+                        <li>General - http://sysctl.org/cameleon/hosts</li>
+                        <li>SmartTV - https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt</li>
+                        <li>LG Tracking - https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/regex.list</li>
+                        <li>Safe Adlist - https://dbl.oisd.nl/</li>
+                        <li>Facebook - https://raw.githubusercontent.com/aronjanosch/pihole-facebook_oculus/main/pihole-facebook.txt</li>
+                    </ul>
+                    <h4>My Pi-Hole</h4>
+                    <p>Here is what my pi-hole looks like. It requires that you have a raspberry pi or some computer that runs linux.</p>
+                    <div class="pi-hole-imgs">
+                        <div class="row-of-pics-1">
+                            <div class="pics-1-content"><img class="pics-1" src="../assets/my-pi-w-pihole-on-it.png" alt="my-pi-w-pihole-on-it" width="100%"></div>
+                            <div class="pics-2-content"><img class="pics-2" src="../assets/pihole-login.png" alt="pihole-login" width="100%"></div>
+                        </div>
+                        <div class="row-of-pics-2">
+                            <div><img class="pics-3" src="../assets/my-pihole.png" alt="my-pihole" width="100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="homeServer">
+                    <h1>Home Server</h1>
+                    <h4>What is Home Serving/Self Hosting?</h4>
+                    <p>
+                        The concept in which you host your own applications, data, and more. Taking away the "unknown" factor in how your data is managed and stored, this provides those with the willingness to learn and the mind to do so to take control of their data without losing the functionality of services they otherwise use frequently.
+                        <br/><b>Some Examples:</b> For instance, if you use dropbox, but are not fond of having your most sensitive data stored in a data-storage container that you do not have direct control over, you may consider NextCloud. Or let's say you're used to hosting a blog out of a Blogger platform, but would rather have your own customization and flexibility of controlling your updates? Why not give WordPress a go. The possibilities are endless and it all starts here with a server.
+                    </p>
+                    <h4>How to do it?</h4>
+                    <p>I'm not entirely sure on the whole process. The <a href="https://adrift.space/r-selfhosted/wiki/" target="_blank">Wiki Page</a> for self-hosting has good information. Also, the subreddits <a href="https://www.reddit.com/r/selfhosted/" target="_blank">r/selfhosted</a> and <a href="https://www.reddit.com/r/HomeServer/" target="_blank">r/HomeServer</a> have lots of information and places to interact w/ community members who've paved the way and done this before.</p>
+                    <h4>My Server</h4>
+                    <p>I don't have one yet. This is my next side project!</p>
+                </div>
+                <div id="wiiHomebrew">
+                    <h1>Wii/WiiU Homebrew</h1>
+                    <h4>What is homebrew?</h4>
+                    <p>Homebrew refers to software not authorized by Nintendo. This can include games, utilities, emulators and much more! Running homebrew on your Nintendo Wii can be done for free by exploiting bugs in Wii’s software. The modifications installed by following this guide will give you easy and persistent access to Wii homebrew.</p>
+                    <h4>How to do it?</h4>
+                    <p>Go <a href="https://wii.guide/get-started" target="_blank">here</a> and follow the steps from the exploit of your choosing. There are many to choose from, but I used the str2hax method to install the Homebrew channel on my Nintendo Wii.</p>
+                    <p>TLDR - You can modify your Wii to do cool things. Here's some videos to show why to do it followed by how.</p>
+                    <div class="youtube-embed">
+                        <iframe class="youtube-vid" src="https://www.youtube.com/embed/AOUKrpe4Q-o"></iframe>
+                    </div>
+                    <div class="youtube-embed">
+                        <iframe class="youtube-vid" src="https://www.youtube.com/embed/x1njuiyPFxU"></iframe>
+                    </div>
+                    <div class="youtube-embed">
+                        <iframe class="youtube-vid" src="https://www.youtube.com/embed/MvNag0B5jbk"></iframe>
+                    </div>
+                    <h4>My Homebrew</h4>
+                    <p></p>
+                    <div class="wii-imgs">
+                        <div class="row-of-pics-1">
+                            <div class="pics-1-content"><img class="pics-1" src="../assets/homebrew-app.jpg" alt="homebrew-app" width="100%"></div>
+                            <div class="pics-2-content"><img class="pics-2" src="../assets/homebrew-apps-1.jpg" alt="homebrew-apps-1" width="100%"></div>
+                        </div>
+                        <div class="row-of-pics-2">
+                            <div class="pics-3-content"><img class="pics-3" src="../assets/homebrew-apps-2.jpg" alt="homebrew-apps-2" width="100%"></div>
+                            <div class="pics-4-content"><img class="pics-4" src="../assets/homebrew-apps-3.jpg" alt="homebrew-apps-3" width="100%"></div>
+                        </div>
+                    </div>
+                    <div class="wii-imgs">
+                        <div class="row-of-pics-1">
+                            <div class="pics-1-content"><img class="pics-1" src="../assets/mario-kart-mod.jpg" alt="mario-kart-mod" width="100%"></div>
+                            <div class="pics-2-content"><img class="pics-2" src="../assets/gba-emulator-3.jpg" alt="gba-emulator-3" width="100%"></div>
+                        </div>
+                        <div class="row-of-pics-2">
+                            <div class="pics-3-content"><img class="pics-3" src="../assets/gba-emulator-2.jpg" alt="gba-emulator-2" width="100%"></div>
+                            <div class="pics-4-content"><img class="pics-4" src="../assets/gba-emulator-1.jpg" alt="gba-emulator-1" width="100%"></div>
+                        </div>
+                    </div>
+                    <div class="wii-imgs">
+                        <div class="row-of-pics-1">
+                            <div class="pics-1-content"><img class="pics-1" src="../assets/wii-apps.jpg" alt="wii-apps" width="100%"></div>
+                        </div>
+                        <div class="row-of-pics-2">
+                            <div class="pics-2-content"><img class="pics-2" src="../assets/wii-games.gif" alt="wii-games" width="100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="bg-dark text-center">

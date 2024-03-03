@@ -25,6 +25,11 @@ body {
 .bg-warning { background-color: #dfca0b !important; }
 .bg-danger { background-color: #ed1f04 !important; }
 
+/* Scroll behavior on clicks to links of the same page */
+html {
+    scroll-behavior: smooth;
+}
+
 /*header css*/
 header {
     margin-bottom: 10px;
@@ -98,6 +103,7 @@ header {
 }
 .header-item-2 {
     position: relative;
+    z-index: 100;
 }
 .header-item-1, .header-item-2 {
     padding: 10px;
@@ -126,10 +132,10 @@ header {
     padding-left: 10px;
     padding-right: 10px;
 }
-.titleToHome {
+.titleToHome, .quick-links-links {
     color: white;
 }
-.titleToHome:hover {
+.titleToHome:hover, .quick-links-links:hover, .menu-item-lg:hover {
     color: #212529;
 }
 
@@ -138,6 +144,94 @@ main {
     min-height: 65vh;
     max-width: 700px;
     margin: 10px auto;
+}
+.row {
+    margin: 20px;
+}
+.hr-resume {
+    top: 20px;
+    border: none;
+    height: 6px;
+    background: black;
+}
+.h4-resume {
+    font-weight: bold;
+}
+.h5-resume {
+    font-style: italic;
+    font-weight: normal;
+}
+.li-resume {
+    list-style-type: square;
+}
+.li-resume-main-idea {
+    font-weight: bold;
+}
+.quick-links-resume {
+    font-weight: bold;
+    background-color: #5d656c;
+    padding: 20px;
+    border-radius: 25px;
+}
+.skills-p-resume {
+    font-weight: normal;
+}
+.adjusted-site-heading {
+    height: 100%;
+}
+.pics-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+/* Create two equal columns that sits next to each other */
+.pics-col {
+    flex: 50%;
+    padding: 0 4px;
+}
+.pics-col, .pics-1 {
+    margin-top: 8px;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 100%;
+}
+.youtube-embed {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin: 10px;
+}
+.youtube-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.pics-of-book {
+    display: flex;
+    flex-direction: column;
+}
+.row-of-pics-1, .row-of-pics-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+.pics-1-content, .pics-2-content {
+    margin: 5px 5px 0px 5px;
+    padding: 5px 5px 0px 5px;
+}
+.pics-3-content, .pics-4-content {
+    margin: 0px 5px 5px 5px;
+    padding: 0px 5px 5px 5px;
+}
+.pics-1, .pics-2, .pics-3, .pics-4 {
+    border-radius: 10px;
 }
 
 /*footer css*/
