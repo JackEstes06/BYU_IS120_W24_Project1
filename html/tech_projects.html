@@ -16,6 +16,8 @@
     <!-- Add Font Awesome -->
     <script defer src="https://kit.fontawesome.com/5cc152d3ec.js" crossorigin="anonymous"></script>
 
+    <!-- Custom js -->    
+    <script src="../js/scripts.js"></script>
     <!-- Custom Styles -->
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
@@ -66,15 +68,15 @@
                     </div>
                     <p>Once you've fully set up the raspberry pi, Wi-Fi configuration settings, and pi-hole, you can start blocking what you want! Here are some links to blacklists for what I block and why; the rest you can google around for! These aren't all navigable links, so I'll put the in as text, and you can either add them to your ad-list (of things to blacklist) or go to them by copying and pasting.</p>
                     <ul>
-                        <li>General - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts</li>
-                        <li>Tracking - https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt</li>
-                        <li>Ads - https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt</li>
-                        <li>Adult Content - https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list</li>
-                        <li>General - http://sysctl.org/cameleon/hosts</li>
-                        <li>SmartTV - https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt</li>
-                        <li>LG Tracking - https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/regex.list</li>
-                        <li>Safe Adlist - https://dbl.oisd.nl/</li>
-                        <li>Facebook - https://raw.githubusercontent.com/aronjanosch/pihole-facebook_oculus/main/pihole-facebook.txt</li>
+                        <li><a href="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" title="https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts">General</a></li>
+                        <li><a href="https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt" title="https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt">Tracking</a></li>
+                        <li><a href="https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt" title="https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt">Ads</a></li>
+                        <li><a href="https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list" title="https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list">Adult Content</a></li>
+                        <li><a href="http://sysctl.org/cameleon/hosts" title="http://sysctl.org/cameleon/hosts">General</a></li>
+                        <li><a href="https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt" title="https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt">LG SmartTV</a></li>
+                        <li><a href="https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/regex.list" title="https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/regex.list">Tracking</a></li>
+                        <li><a href="https://dbl.oisd.nl/" title="https://dbl.oisd.nl/">Safe Adlist</a></li>
+                        <li><a href="https://raw.githubusercontent.com/aronjanosch/pihole-facebook_oculus/main/pihole-facebook.txt" title="https://raw.githubusercontent.com/aronjanosch/pihole-facebook_oculus/main/pihole-facebook.txt">Facebook</a></li>
                     </ul>
                     <h4>My Pi-Hole</h4>
                     <p>Here is what my pi-hole looks like. It requires that you have a raspberry pi or some computer that runs linux.</p>
@@ -147,6 +149,12 @@
                         </div>
                     </div>
                 </div>
+                <br><br><br>
+                <div class="rss-news-container">
+                    <button class="rss-button" id="rss-btn">Get Current NBA News</button>
+                    <h1 id="rss-h1" style="display: none; text-align: center;">Around the League</h1>
+                    <div class="rss" id="rss-feed"></div>
+                </div>
             </div>
         </div>
     </main>
@@ -177,6 +185,19 @@
                 }
             });
         }
+    </script>
+    <!--Script for rss feed-->
+    <script>
+        document.getElementById('rss-btn').addEventListener('click', async () => {
+            try {
+                const data = await getNBAFeedData();
+                document.getElementById("rss-btn").style.display = "none";
+                document.getElementById("rss-h1").style.display = "block";
+                // Do something with the data if needed
+            } catch (error) {
+                console.error('Error fetching NBA feed:', error);
+            }
+        });
     </script>
 </body>
 </html>
